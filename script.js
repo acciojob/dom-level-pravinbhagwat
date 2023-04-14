@@ -4,4 +4,4 @@ while (element) {
   level++;
   element = element.parentNode;
 }
-alert("The DOM level of element is:",level);
+alert("The level of element is:",level);
