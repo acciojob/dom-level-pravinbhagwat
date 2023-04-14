@@ -1,7 +1,7 @@
-const element = document.getElementById("level");
+let element = document.getElementById("level");
 let level = 0;
-while (element) {
+while (element.parentNode !== null) {
   level++;
   element = element.parentNode;
 }
-alert("The level of element is:",level);
+window.alert(`The level of the element is: ${level}`);
